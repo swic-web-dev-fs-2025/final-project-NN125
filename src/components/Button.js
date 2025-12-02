@@ -3,7 +3,7 @@ export default function Button({ type = "button", color = "bg-white" }) {
     <button
       type={type}
       disabled={disabled}
-      className={`btnField${color}`}
+      className={`btnField ${color}`}
     ></button>
   );
 }
