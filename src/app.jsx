@@ -28,33 +28,30 @@ export default function App() {
   };
   return (
     <>
-      <main className="app-background">
+      <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center p-4">
         <h1>Button Color Changer</h1>
         <h2>Click the buttons to change their color!</h2>
         <p>The buttons' colors will stay upon refresh.</p>
-        <div className="card">
+        <div>
           {/* First row of buttons */}
           <div>
             <button
               onClick={() => {
                 handleButtonClick("button1");
               }}
-              className={"btn " + (buttonStates.button1 ? "btn-on" : "btn-off")}
-              style={{ margin: "5px" }}
+              className="btnField"
             ></button>
             <button
               onClick={() => {
                 handleButtonClick("button2");
               }}
-              className={"btn " + (buttonStates.button2 ? "btn-on" : "btn-off")}
-              style={{ margin: "5px" }}
+              className="btnField"
             ></button>
             <button
               onClick={() => {
                 handleButtonClick("button3");
               }}
-              className={"btn " + (buttonStates.button3 ? "btn-on" : "btn-off")}
-              style={{ margin: "5px" }}
+              className="btnField"
             ></button>
             <button
               onClick={() => {
