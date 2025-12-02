@@ -1,23 +1,23 @@
 import { useLocalStorage } from "@uidotdev/usehooks";
 
-export default function App() {
+export default function app() {
   const [buttonStates, setButtonStates] = useLocalStorage("buttonStates", {
-    button1: false,
-    button2: false,
-    button3: false,
-    button4: false,
-    button5: false,
-    button6: false,
-    button7: false,
-    button8: false,
-    button9: false,
-    button10: false,
-    button11: false,
-    button12: false,
-    button13: false,
-    button14: false,
-    button15: false,
-    button16: false,
+    button1: "bg-white",
+    button2: "bg-white",
+    button3: "bg-white",
+    button4: "bg-white",
+    button5: "bg-white",
+    button6: "bg-white",
+    button7: "bg-white",
+    button8: "bg-white",
+    button9: "bg-white",
+    button10: "bg-white",
+    button11: "bg-white",
+    button12: "bg-white",
+    button13: "bg-white",
+    button14: "bg-white",
+    button15: "bg-white",
+    button16: "bg-white",
   });
 
   const handleButtonClick = (buttonName) => {
@@ -39,7 +39,7 @@ export default function App() {
               onClick={() => {
                 handleButtonClick("button1");
               }}
-              className="btnField m-2"
+              className="btnField"
             ></button>
             <button
               onClick={() => {
