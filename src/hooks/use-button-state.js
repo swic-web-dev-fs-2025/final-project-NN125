@@ -31,5 +31,5 @@ export default function useButtonState() {
     }));
   };
 
-  return { handleButtonClick };
+  return { buttonStates, handleButtonClick };
 }
