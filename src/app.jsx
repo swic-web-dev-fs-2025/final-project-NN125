@@ -2,7 +2,7 @@ import Button from "./components/Button.jsx";
 import useButtonState from "./hooks/use-button-state";
 
 export default function app() {
-  const { handleButtonClick } = useButtonState();
+  const { buttonStates, handleButtonClick } = useButtonState();
 
   return (
     <>
@@ -14,6 +14,7 @@ export default function app() {
           {/* First row of buttons */}
           <div>
             <Button
+              color={buttonStates.button1}
               onClick={() => {
                 handleButtonClick("button1");
               }}
