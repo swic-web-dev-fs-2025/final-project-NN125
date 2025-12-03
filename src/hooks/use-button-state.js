@@ -10,10 +10,10 @@ export default function useButtonState() {
   const [colorState, setColorState] = useState("bg-red-500");
 
   // set the button's class to the current colorState when clicked
-  const handleButtonClick = (buttonName) => {
+  const handleButtonClick = (buttonIndex) => {
     setButtonStates((prevState) => ({
       ...prevState,
-      [buttonName]: colorState,
+      [buttonIndex]: colorState,
     }));
   };
 
