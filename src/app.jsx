@@ -13,12 +13,11 @@ export default function app() {
         <div>
           {/* First row of buttons */}
           <div>
-            <button
+            <Button
               onClick={() => {
                 handleButtonClick("button1");
               }}
-              className="btnField"
-            ></button>
+            />
             <button
               onClick={() => {
                 handleButtonClick("button2");
