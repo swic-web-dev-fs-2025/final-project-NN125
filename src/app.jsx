@@ -12,6 +12,55 @@ export default function app() {
       },
       color: buttonStates.button1,
     },
+    {
+      name: "button2",
+      onClick: () => {
+        handleButtonClick("button2");
+      },
+      color: buttonStates.button2,
+    },
+    {
+      name: "button3",
+      onClick: () => {
+        handleButtonClick("button3");
+      },
+      color: buttonStates.button3,
+    },
+    {
+      name: "button4",
+      onClick: () => {
+        handleButtonClick("button4");
+      },
+      color: buttonStates.button4,
+    },
+    {
+      name: "button5",
+      onClick: () => {
+        handleButtonClick("button5");
+      },
+      color: buttonStates.button5,
+    },
+    {
+      name: "button6",
+      onClick: () => {
+        handleButtonClick("button6");
+      },
+      color: buttonStates.button6,
+    },
+    {
+      name: "button7",
+      onClick: () => {
+        handleButtonClick("button7");
+      },
+      color: buttonStates.button7,
+    },
+    {
+      name: "button8",
+      onClick: () => {
+        handleButtonClick("button8");
+      },
+      color: buttonStates.button8,
+    },
   ];
 
   return (
