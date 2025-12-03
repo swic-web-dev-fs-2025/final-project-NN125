@@ -27,5 +27,5 @@ export default function useButtonState() {
     }));
   };
 
-  return { buttonStates, handleButtonClick };
+  return { handleButtonClick };
 }

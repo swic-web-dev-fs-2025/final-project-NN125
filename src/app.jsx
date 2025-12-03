@@ -1,4 +1,8 @@
+import useButtonState from "./hooks/use-button-state";
+
 export default function app() {
+  const { handleButtonClick } = useButtonState();
+
   return (
     <>
       <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center p-2">
