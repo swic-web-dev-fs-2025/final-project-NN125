@@ -4,15 +4,7 @@ import useButtonState from "./hooks/use-button-state";
 export default function app() {
   const { buttonStates, handleButtonClick } = useButtonState();
 
-  const BUTTON_FIELDS = [
-    { label: "Name", name: "name", type: "text" },
-    { label: "Email", name: "email", type: "email" },
-    {
-      label: "Message",
-      name: "message",
-      type: "textarea",
-      value: message ?? "",
-      onChange: (e) => setMessage(e.target.value),
+  const BUTTON_ROW_ONE = [
     },
   ];
 
