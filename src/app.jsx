@@ -6,60 +6,60 @@ export default function app() {
 
   const BUTTON_ROW_ONE = [
     {
-      name: "button1",
+      name: "0",
       onClick: () => {
-        handleButtonClick("button1");
+        handleButtonClick(0);
       },
-      color: buttonStates.button1,
+      color: buttonStates[0],
     },
     {
-      name: "button2",
+      name: "1",
       onClick: () => {
-        handleButtonClick("button2");
+        handleButtonClick(1);
       },
-      color: buttonStates.button2,
+      color: buttonStates[1],
     },
     {
-      name: "button3",
+      name: "2",
       onClick: () => {
-        handleButtonClick("button3");
+        handleButtonClick(2);
       },
-      color: buttonStates.button3,
+      color: buttonStates[2],
     },
     {
-      name: "button4",
+      name: "3",
       onClick: () => {
-        handleButtonClick("button4");
+        handleButtonClick(3);
       },
-      color: buttonStates.button4,
+      color: buttonStates[3],
     },
     {
-      name: "button5",
+      name: "4",
       onClick: () => {
-        handleButtonClick("button5");
+        handleButtonClick(4);
       },
-      color: buttonStates.button5,
+      color: buttonStates[4],
     },
     {
-      name: "button6",
+      name: "5",
       onClick: () => {
-        handleButtonClick("button6");
+        handleButtonClick(5);
       },
-      color: buttonStates.button6,
+      color: buttonStates[5],
     },
     {
-      name: "button7",
+      name: "6",
       onClick: () => {
-        handleButtonClick("button7");
+        handleButtonClick(6);
       },
-      color: buttonStates.button7,
+      color: buttonStates[6],
     },
     {
-      name: "button8",
+      name: "7",
       onClick: () => {
-        handleButtonClick("button8");
+        handleButtonClick(7);
       },
-      color: buttonStates.button8,
+      color: buttonStates[7],
     },
   ];
 
