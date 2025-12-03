@@ -1,4 +1,5 @@
 import { useLocalStorage } from "@uidotdev/usehooks";
+import { useState } from "react";
 
 export default function useButtonState() {
   const [buttonStates, setButtonStates] = useLocalStorage("buttonStates", {
@@ -19,6 +20,8 @@ export default function useButtonState() {
     button15: "bg-white",
     button16: "bg-white",
   });
+
+  const [colorState, setColorState] = useState("bg-red-500");
 
   const handleButtonClick = (buttonName) => {
     setButtonStates((prevState) => ({
