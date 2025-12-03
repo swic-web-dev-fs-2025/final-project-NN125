@@ -5,6 +5,12 @@ export default function app() {
   const { buttonStates, handleButtonClick } = useButtonState();
 
   const BUTTON_ROW_ONE = [
+    {
+      name: "button1",
+      onClick: () => {
+        handleButtonClick("button1");
+      },
+      color: buttonStates.button1,
     },
   ];
 
