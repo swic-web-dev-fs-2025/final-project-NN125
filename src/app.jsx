@@ -1,5 +1,5 @@
 import Button from "./components/Button.jsx";
-import useButtonState from "./hooks/use-button-state";
+import useButtonState from "./hooks/use-button-state.jsx";
 
 export default function app() {
   const { colorDisplay, buttonStates, handleButtonClick, setCurrentColor } =
