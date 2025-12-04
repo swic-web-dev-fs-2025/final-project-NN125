@@ -87,6 +87,18 @@ export default function app() {
     },
   ];
 
+  const FORM_FIELDS = [
+    { label: "Name", name: "name", type: "text" },
+    { label: "Email", name: "email", type: "email" },
+    {
+      label: "Message",
+      name: "message",
+      type: "textarea",
+      value: message ?? "",
+      onChange: (e) => setMessage(e.target.value),
+    },
+  ];
+
   return (
     <>
       <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center">
