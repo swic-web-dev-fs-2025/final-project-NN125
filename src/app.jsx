@@ -5,7 +5,7 @@ export default function app() {
   const { colorDisplay, buttonStates, handleButtonClick, setCurrentColor } =
     useButtonState();
 
-  const BUTTON_ROW_ONE = [
+  const BUTTON_FIELD = [
     {
       name: "0",
       onClick: () => {
@@ -194,10 +194,7 @@ export default function app() {
           <div className="grid grid-cols-8 gap-1">
             {/* Button Field */}
             {/* Map the buttons array to Button components */}
-            {BUTTON_ROW_ONE.map((field) => (
-              <Button key={field.name} {...field} />
-            ))}
-            {BUTTON_ROW_TWO.map((field) => (
+            {BUTTON_FIELD.map((field) => (
               <Button key={field.name} {...field} />
             ))}
           </div>
