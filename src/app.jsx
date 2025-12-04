@@ -80,7 +80,7 @@ export default function app() {
           <p className="text-sm pb-4">
             The buttons' colors will stay upon refresh.
           </p>
-          <div className="grid grid-cols-8 gap-1">
+          <div className="grid grid-cols-8 gap-1.25">
             {/* Button Field */}
             {/* Map the buttons array to Button components */}
             {BUTTON_FIELD.map((field) => (
