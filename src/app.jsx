@@ -80,6 +80,12 @@ export default function app() {
       className: "colorPicker bg-purple-500",
     },
     {
+      id: "color-fuchsia",
+      color: "bg-fuchsia-500",
+      onClick: () => setCurrentColor("bg-fuchsia-500"),
+      className: "colorPicker bg-fuchsia-500",
+    },
+    {
       id: "color-pink",
       color: "bg-pink-500",
       onClick: () => setCurrentColor("bg-pink-500"),
