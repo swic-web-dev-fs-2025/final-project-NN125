@@ -30,6 +30,7 @@ export default function useButtonState() {
 
   // form
   const [submittedData, setSubmittedData] = useState("");
+  const [savedData, setSavedData] = useLocalStorage("submittedData", {});
   const [message, setMessage] = useState("");
 
   function handleSubmit(formData) {
