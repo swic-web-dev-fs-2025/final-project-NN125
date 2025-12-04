@@ -2,6 +2,7 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 import { useState } from "react";
 
 export default function useButtonState() {
+  // main app
   const [buttonStates, setButtonStates] = useLocalStorage(
     "buttonStates",
     Array(64).fill("bg-white")
@@ -26,6 +27,16 @@ export default function useButtonState() {
     .replace("bg-", "")
     .replace("-500", "")
     .toUpperCase();
+
+  // form
+  const [submittedData, setSubmittedData] = useState(null);
+  const [message, setMessage] = useState(null);
+
+  function handleSubmit(formData) {
+    const data = Object.fromEntries(formData);
+    setSubmittedData(data);
+    setMessage("");
+  }
 
   return { buttonStates, handleButtonClick, setCurrentColor, colorDisplay };
 }
