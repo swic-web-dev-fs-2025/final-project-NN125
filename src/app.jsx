@@ -1,4 +1,5 @@
 import Button from "./components/Button.jsx";
+import Input from "./components/Input.jsx";
 import useButtonState from "./hooks/use-button-state.jsx";
 
 export default function app() {
