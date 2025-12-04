@@ -148,10 +148,14 @@ export default function app() {
             </p>
             <Button
               type="submit"
-              className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
+              disabled={(message ?? "").length > 200}
+              className={`rounded bg-blue-600 px-4 py-2 text-white ${
+                (message ?? "").length > 200
+                  ? "opacity-50 cursor-not-allowed"
+                  : "hover:bg-blue-700"
+              }`}
               text="Submit"
             />
-
             <Button
               type="button"
               onClick={(event) => {
