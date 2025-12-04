@@ -63,6 +63,39 @@ export default function app() {
     },
   ];
 
+  const BUTTON_COLOR_PICKER = [
+    {
+      color: "bg-red-500",
+      onClick: () => setCurrentColor("bg-red-500"),
+      className: "colorPicker",
+    },
+    {
+      color: "bg-green-500",
+      onClick: () => setCurrentColor("bg-green-500"),
+      className: "colorPicker",
+    },
+    {
+      color: "bg-blue-500",
+      onClick: () => setCurrentColor("bg-blue-500"),
+      className: "colorPicker",
+    },
+    {
+      color: "bg-yellow-500",
+      onClick: () => setCurrentColor("bg-yellow-500"),
+      className: "colorPicker",
+    },
+    {
+      color: "bg-purple-500",
+      onClick: () => setCurrentColor("bg-purple-500"),
+      className: "colorPicker",
+    },
+    {
+      color: "bg-pink-500",
+      onClick: () => setCurrentColor("bg-pink-500"),
+      className: "colorPicker",
+    },
+  ];
+
   return (
     <>
       <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center p-2">
