@@ -22,5 +22,5 @@ export default function useButtonState() {
     setColorState(color);
   };
 
-  return { buttonStates, handleButtonClick, setCurrentColor };
+  return { buttonStates, handleButtonClick, setCurrentColor, colorState };
 }
