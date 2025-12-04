@@ -13,6 +13,7 @@ export default function app() {
     setSubmittedData,
     message,
     setMessage,
+    savedData,
   } = useButtonState();
 
   // dynamically create an array of 64 buttons using Array.from
