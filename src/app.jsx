@@ -191,16 +191,12 @@ export default function app() {
           <p className="text-sm pb-4">
             The buttons' colors will stay upon refresh.
           </p>
-          <div>
-            {/* First row of buttons */}
+          <div className="grid grid-cols-8 gap-1">
+            {/* Button Field */}
             {/* Map the buttons array to Button components */}
             {BUTTON_ROW_ONE.map((field) => (
               <Button key={field.name} {...field} />
             ))}
-          </div>
-          <div>
-            {/* Second row of buttons */}
-            {/* Map the buttons array to Button components */}
             {BUTTON_ROW_TWO.map((field) => (
               <Button key={field.name} {...field} />
             ))}
