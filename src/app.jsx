@@ -157,13 +157,13 @@ export default function app() {
               <Input key={field.name} {...field} />
             ))}
             <p className="text-sm text-gray-600">
-              Characters: {(message ?? "").length}/200
+              Characters: {(message ?? "").length}/115
             </p>
             <Button
               type="submit"
-              disabled={(message ?? "").length > 200}
+              disabled={(message ?? "").length > 115}
               className={`rounded bg-blue-600 px-4 py-2 text-white ${
-                (message ?? "").length > 200
+                (message ?? "").length > 115
                   ? "opacity-50 cursor-not-allowed"
                   : "hover:bg-blue-700"
               }`}
