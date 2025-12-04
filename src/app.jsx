@@ -185,17 +185,6 @@ export default function app() {
               <h2 className="mb-2 font-semibold text-green-900">
                 Form Submitted!
               </h2>
-              <ul className="space-y-1 text-sm">
-                <li>
-                  <strong>Title:</strong> {submittedData.title}
-                </li>
-                <li>
-                  <strong>Name:</strong> {submittedData.name}
-                </li>
-                <li>
-                  <strong>Description:</strong> {submittedData.message}
-                </li>
-              </ul>
             </section>
           )}
         </div>
