@@ -4,13 +4,11 @@ export default function Button({
   type = "button",
   color = "bg-white",
   className = `btnField ${color}`,
+  text,
 }) {
   return (
-    <button
-      id={id}
-      type={type}
-      className={className}
-      onClick={onClick}
-    ></button>
+    <button id={id} type={type} className={className} onClick={onClick}>
+      {text}
+    </button>
   );
 }
