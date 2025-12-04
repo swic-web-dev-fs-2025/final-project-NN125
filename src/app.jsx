@@ -65,6 +65,11 @@ export default function app() {
 
   const BUTTON_COLOR_PICKER = [
     {
+      color: "bg-white",
+      onClick: () => setCurrentColor("bg-white"),
+      className: "colorPicker bg-white",
+    },
+    {
       color: "bg-red-500",
       onClick: () => setCurrentColor("bg-red-500"),
       className: "colorPicker bg-red-500",
@@ -93,6 +98,11 @@ export default function app() {
       color: "bg-pink-500",
       onClick: () => setCurrentColor("bg-pink-500"),
       className: "colorPicker bg-pink-500",
+    },
+    {
+      color: "bg-black",
+      onClick: () => setCurrentColor("bg-black"),
+      className: "colorPicker bg-black",
     },
   ];
 
