@@ -26,12 +26,6 @@ export default function app() {
       className: "colorPicker bg-gray-500",
     },
     {
-      name: "color-light-gray",
-      color: "bg-gray-300",
-      onClick: () => setCurrentColor("bg-gray-300"),
-      className: "colorPicker bg-gray-300",
-    },
-    {
       name: "color-white",
       color: "bg-white",
       onClick: () => setCurrentColor("bg-white"),
