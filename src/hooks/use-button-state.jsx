@@ -45,6 +45,7 @@ export default function useButtonState() {
     colorDisplay,
     handleSubmit,
     submittedData,
+    setSubmittedData,
     message,
     setMessage,
   };
