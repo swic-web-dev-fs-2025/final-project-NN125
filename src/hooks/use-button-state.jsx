@@ -38,5 +38,14 @@ export default function useButtonState() {
     setMessage("");
   }
 
-  return { buttonStates, handleButtonClick, setCurrentColor, colorDisplay };
+  return {
+    buttonStates,
+    handleButtonClick,
+    setCurrentColor,
+    colorDisplay,
+    handleSubmit,
+    submittedData,
+    message,
+    setMessage,
+  };
 }
