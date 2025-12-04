@@ -171,10 +171,10 @@ export default function app() {
               </h2>
               <ul className="space-y-1 text-sm">
                 <li>
-                  <strong>Name:</strong> {submittedData.name}
+                  <strong>Title:</strong> {submittedData.title}
                 </li>
                 <li>
-                  <strong>Email:</strong> {submittedData.email}
+                  <strong>Name:</strong> {submittedData.name}
                 </li>
                 <li>
                   <strong>Message:</strong> {submittedData.message}
