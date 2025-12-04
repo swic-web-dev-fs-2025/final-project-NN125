@@ -124,13 +124,13 @@ export default function app() {
           {/* Submitted Data Display */}
           <ul className="text-sm pb-2">
             <li>
-              <strong>Title:</strong> {submittedData.title}
+              <strong>Title:</strong> {savedData.title}
             </li>
             <li>
-              <strong>Name:</strong> {submittedData.name}
+              <strong>Name:</strong> {savedData.name}
             </li>
             <li>
-              <strong>Description:</strong> {submittedData.message}
+              <strong>Description:</strong> {savedData.message}
             </li>
           </ul>
           {/* Button Field */}
