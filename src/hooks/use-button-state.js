@@ -22,5 +22,10 @@ export default function useButtonState() {
     setColorState(color);
   };
 
-  return { buttonStates, handleButtonClick, setCurrentColor, colorState };
+  const colorDisplay = colorState
+    .replace("bg-", "")
+    .replace("-500", "")
+    .toUpperCase();
+
+  return { buttonStates, handleButtonClick, setCurrentColor, colorDisplay };
 }
