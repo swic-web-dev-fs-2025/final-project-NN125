@@ -96,8 +96,8 @@ export default function app() {
   ];
 
   const FORM_FIELDS = [
+    { label: "Title", name: "title", type: "text" },
     { label: "Name", name: "name", type: "text" },
-    { label: "Email", name: "email", type: "email" },
     {
       label: "Message",
       name: "message",
