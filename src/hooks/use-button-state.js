@@ -17,5 +17,10 @@ export default function useButtonState() {
     }));
   };
 
-  return { buttonStates, handleButtonClick };
+  // change the color state based on color picker selection
+  const setCurrentColor = (color) => {
+    setColorState(color);
+  };
+
+  return { buttonStates, handleButtonClick, setCurrentColor };
 }
