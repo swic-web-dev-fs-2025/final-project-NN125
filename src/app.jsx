@@ -6,10 +6,10 @@ export default function app() {
     useButtonState();
 
   // dynamically create an array of 64 buttons using Array.from
-  const BUTTON_FIELD = Array.from({ length: 64 }, (_, i) => ({
-    name: String(i),
-    onClick: () => handleButtonClick(i),
-    color: buttonStates[i],
+  const BUTTON_FIELD = Array.from({ length: 64 }, (unused, index) => ({
+    name: String(index),
+    onClick: () => handleButtonClick(index),
+    color: buttonStates[index],
   }));
 
   const BUTTON_COLOR_PICKER = [
