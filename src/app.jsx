@@ -182,7 +182,7 @@ export default function app() {
 
   return (
     <>
-      <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center p-2">
+      <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center">
         <div className="rounded-xl m-4 text-center bg-white p-8 shadow-lg">
           <h1 className="text-4xl font-bold p-4">Button Color Changer</h1>
           <h2 className="text-xl pb-4">
