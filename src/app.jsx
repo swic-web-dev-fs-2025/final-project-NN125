@@ -65,49 +65,49 @@ export default function app() {
 
   const BUTTON_COLOR_PICKER = [
     {
-      id: "color-white",
+      name: "color-white",
       color: "bg-white",
       onClick: () => setCurrentColor("bg-white"),
       className: "colorPicker bg-white",
     },
     {
-      id: "color-red",
+      name: "color-red",
       color: "bg-red-500",
       onClick: () => setCurrentColor("bg-red-500"),
       className: "colorPicker bg-red-500",
     },
     {
-      id: "color-green",
+      name: "color-green",
       color: "bg-green-500",
       onClick: () => setCurrentColor("bg-green-500"),
       className: "colorPicker bg-green-500",
     },
     {
-      id: "color-blue",
+      name: "color-blue",
       color: "bg-blue-500",
       onClick: () => setCurrentColor("bg-blue-500"),
       className: "colorPicker bg-blue-500",
     },
     {
-      id: "color-yellow",
+      name: "color-yellow",
       color: "bg-yellow-500",
       onClick: () => setCurrentColor("bg-yellow-500"),
       className: "colorPicker bg-yellow-500",
     },
     {
-      id: "color-purple",
+      name: "color-purple",
       color: "bg-purple-500",
       onClick: () => setCurrentColor("bg-purple-500"),
       className: "colorPicker bg-purple-500",
     },
     {
-      id: "color-pink",
+      name: "color-pink",
       color: "bg-pink-500",
       onClick: () => setCurrentColor("bg-pink-500"),
       className: "colorPicker bg-pink-500",
     },
     {
-      id: "color-black",
+      name: "color-black",
       color: "bg-black",
       onClick: () => setCurrentColor("bg-black"),
       className: "colorPicker bg-black",
