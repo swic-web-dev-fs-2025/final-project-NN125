@@ -143,6 +143,12 @@ export default function app() {
       className: "colorPicker bg-red-500",
     },
     {
+      name: "color-yellow",
+      color: "bg-yellow-500",
+      onClick: () => setCurrentColor("bg-yellow-500"),
+      className: "colorPicker bg-yellow-500",
+    },
+    {
       name: "color-green",
       color: "bg-green-500",
       onClick: () => setCurrentColor("bg-green-500"),
@@ -153,12 +159,6 @@ export default function app() {
       color: "bg-blue-500",
       onClick: () => setCurrentColor("bg-blue-500"),
       className: "colorPicker bg-blue-500",
-    },
-    {
-      name: "color-yellow",
-      color: "bg-yellow-500",
-      onClick: () => setCurrentColor("bg-yellow-500"),
-      className: "colorPicker bg-yellow-500",
     },
     {
       name: "color-purple",
