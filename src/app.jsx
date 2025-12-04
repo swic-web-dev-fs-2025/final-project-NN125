@@ -2,7 +2,8 @@ import Button from "./components/Button.jsx";
 import useButtonState from "./hooks/use-button-state";
 
 export default function app() {
-  const { buttonStates, handleButtonClick, setCurrentColor } = useButtonState();
+  const { buttonStates, handleButtonClick, setCurrentColor, colorState } =
+    useButtonState();
 
   const BUTTON_ROW_ONE = [
     {
@@ -134,6 +135,10 @@ export default function app() {
             {BUTTON_COLOR_PICKER.map((field) => (
               <Button key={field.color} {...field} />
             ))}
+          </div>
+          <div>
+            {/* Selected color display */}
+            <p>Selected Color: {colorState}</p>
           </div>
         </div>
       </main>
