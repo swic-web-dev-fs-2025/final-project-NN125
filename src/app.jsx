@@ -146,12 +146,11 @@ export default function app() {
             <p className="text-sm text-gray-600">
               Characters: {(message ?? "").length}/500
             </p>
-            <button
+            <Button
               type="submit"
               className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
-            >
-              Submit
-            </button>
+              text="Submit"
+            />
 
             <button
               type="button"
