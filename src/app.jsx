@@ -119,9 +119,13 @@ export default function app() {
     <>
       <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center p-2">
         <div className="rounded-xl m-4 text-center bg-white p-8 shadow-lg">
-          <h1 className="text-4xl font-bold">Button Color Changer</h1>
-          <h2 className="text-2xl">Click the buttons to change their color!</h2>
-          <p className="text-lg">The buttons' colors will stay upon refresh.</p>
+          <h1 className="text-4xl font-bold p-4">Button Color Changer</h1>
+          <h2 className="text-xl pb-4">
+            Click the buttons to change their color!
+          </h2>
+          <p className="text-sm pb-4">
+            The buttons' colors will stay upon refresh.
+          </p>
           <div>
             {/* First row of buttons */}
             {/* Map the buttons array to Button components */}
