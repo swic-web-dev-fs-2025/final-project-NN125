@@ -170,8 +170,8 @@ export default function app() {
               className={`rounded bg-blue-600 px-4 py-2 text-white ${
                 (message ?? "").length > 100
                   ? "opacity-50 cursor-not-allowed"
-                  : "hover:bg-blue-700"
-              }`}
+                  : "hover:bg-blue-700 cursor-pointer"
+              } transition-colors`}
               text="Submit"
             />
             <Button
@@ -180,7 +180,7 @@ export default function app() {
                 event.target.form.reset();
                 setSubmittedData(null);
               }}
-              className="ml-2 rounded bg-gray-400 px-4 py-2 text-white hover:bg-gray-500"
+              className="ml-2 rounded bg-gray-400 px-4 py-2 text-white hover:bg-gray-500 transition-colors cursor-pointer"
               text="Clear"
             />
           </form>
