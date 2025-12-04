@@ -152,16 +152,15 @@ export default function app() {
               text="Submit"
             />
 
-            <button
+            <Button
               type="button"
               onClick={(event) => {
                 event.target.form.reset();
                 setSubmittedData(null);
               }}
               className="ml-2 rounded bg-gray-400 px-4 py-2 text-white hover:bg-gray-500"
-            >
-              Clear
-            </button>
+              text="Clear"
+            />
           </form>
 
           {submittedData && (
