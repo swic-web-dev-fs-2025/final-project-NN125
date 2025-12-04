@@ -136,6 +136,32 @@ export default function app() {
             {/* Selected color display */}
             <p className="font-bold">Selected Color: {colorDisplay}</p>
           </div>
+          <form action={handleSubmit} className="space-y-4">
+            {/* Map the fields array to Input components */}
+            {FORM_FIELDS.map((field) => (
+              <Input key={field.name} {...field} />
+            ))}
+            <p className="text-sm text-gray-600">
+              Characters: {(message ?? "").length}/500
+            </p>
+            <button
+              type="submit"
+              className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
+            >
+              Submit
+            </button>
+
+            <button
+              type="button"
+              onClick={(event) => {
+                event.target.form.reset();
+                setSubmittedData(null);
+              }}
+              className="ml-2 rounded bg-gray-400 px-4 py-2 text-white hover:bg-gray-500"
+            >
+              Clear
+            </button>
+          </form>
         </div>
       </main>
     </>
