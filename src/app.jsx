@@ -101,7 +101,7 @@ export default function app() {
     { label: "Title", name: "title", type: "text" },
     { label: "Name", name: "name", type: "text" },
     {
-      label: "Message",
+      label: "Description",
       name: "message",
       type: "textarea",
       value: message ?? "",
@@ -176,7 +176,7 @@ export default function app() {
                   <strong>Name:</strong> {submittedData.name}
                 </li>
                 <li>
-                  <strong>Message:</strong> {submittedData.message}
+                  <strong>Description:</strong> {submittedData.message}
                 </li>
               </ul>
             </section>
