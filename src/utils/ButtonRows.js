@@ -61,6 +61,65 @@ export const BUTTON_ROW_ONE = [
   },
 ];
 
+export const BUTTON_ROW_TWO = [
+  {
+    name: "8",
+    onClick: () => {
+      handleButtonClick(8);
+    },
+    color: buttonStates[8],
+  },
+  {
+    name: "9",
+    onClick: () => {
+      handleButtonClick(9);
+    },
+    color: buttonStates[9],
+  },
+  {
+    name: "10",
+    onClick: () => {
+      handleButtonClick(10);
+    },
+    color: buttonStates[10],
+  },
+  {
+    name: "11",
+    onClick: () => {
+      handleButtonClick(11);
+    },
+    color: buttonStates[11],
+  },
+  {
+    name: "12",
+    onClick: () => {
+      handleButtonClick(12);
+    },
+    color: buttonStates[12],
+  },
+  {
+    name: "13",
+    onClick: () => {
+      handleButtonClick(13);
+    },
+    color: buttonStates[13],
+  },
+  {
+    name: "14",
+    onClick: () => {
+      handleButtonClick(14);
+    },
+    color: buttonStates[14],
+  },
+  {
+    name: "15",
+    onClick: () => {
+      handleButtonClick(15);
+    },
+    color: buttonStates[15],
+  },
+];
+
 export const BUTTON_COLOR_PICKER = [
   {
     name: "color-white",
