@@ -191,6 +191,13 @@ export default function app() {
             ))}
           </div>
           <div>
+            {/* Second row of buttons */}
+            {/* Map the buttons array to Button components */}
+            {BUTTON_ROW_TWO.map((field) => (
+              <Button key={field.name} {...field} />
+            ))}
+          </div>
+          <div>
             {/* Color picker */}
             {/* Map the buttons array to Button components */}
             {BUTTON_COLOR_PICKER.map((field) => (
