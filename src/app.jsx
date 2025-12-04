@@ -67,32 +67,32 @@ export default function app() {
     {
       color: "bg-red-500",
       onClick: () => setCurrentColor("bg-red-500"),
-      className: "colorPicker",
+      className: "colorPicker bg-red-500",
     },
     {
       color: "bg-green-500",
       onClick: () => setCurrentColor("bg-green-500"),
-      className: "colorPicker",
+      className: "colorPicker bg-green-500",
     },
     {
       color: "bg-blue-500",
       onClick: () => setCurrentColor("bg-blue-500"),
-      className: "colorPicker",
+      className: "colorPicker bg-blue-500",
     },
     {
       color: "bg-yellow-500",
       onClick: () => setCurrentColor("bg-yellow-500"),
-      className: "colorPicker",
+      className: "colorPicker bg-yellow-500",
     },
     {
       color: "bg-purple-500",
       onClick: () => setCurrentColor("bg-purple-500"),
-      className: "colorPicker",
+      className: "colorPicker bg-purple-500",
     },
     {
       color: "bg-pink-500",
       onClick: () => setCurrentColor("bg-pink-500"),
-      className: "colorPicker",
+      className: "colorPicker bg-pink-500",
     },
   ];
 
