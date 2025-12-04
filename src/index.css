@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .btnField {
-  @apply hover:bg-gray-300 p-8 m-1 rounded transition-colors;
+  @apply p-8 m-1 rounded transition-colors;
 }
 
 .colorPicker {
