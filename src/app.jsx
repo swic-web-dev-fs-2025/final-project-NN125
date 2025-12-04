@@ -120,6 +120,18 @@ export default function app() {
           <p className="text-sm pb-4">
             The buttons' colors will stay upon refresh.
           </p>
+          {/* Submitted Data Display */}
+          <ul className="text-sm pb-2">
+            <li>
+              <strong>Title:</strong> {submittedData.title}
+            </li>
+            <li>
+              <strong>Name:</strong> {submittedData.name}
+            </li>
+            <li>
+              <strong>Description:</strong> {submittedData.message}
+            </li>
+          </ul>
           {/* Button Field */}
           <div className="grid grid-cols-8 gap-1.25 pb-2">
             {/* Map the buttons array to Button components */}
