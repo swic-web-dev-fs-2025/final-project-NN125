@@ -179,14 +179,6 @@ export default function app() {
               text="Clear"
             />
           </form>
-
-          {submittedData && (
-            <section className="mt-6 rounded-lg bg-green-50 p-4">
-              <h2 className="mb-2 font-semibold text-green-900">
-                Form Submitted!
-              </h2>
-            </section>
-          )}
         </div>
       </main>
     </>
