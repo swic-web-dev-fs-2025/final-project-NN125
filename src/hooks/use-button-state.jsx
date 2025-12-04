@@ -41,6 +41,8 @@ export default function useButtonState() {
     const data = Object.fromEntries(formData);
     setSubmittedData(data);
     setMessage("");
+
+    setSavedData(data);
   }
 
   return {
