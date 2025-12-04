@@ -33,7 +33,7 @@ export default function useButtonState() {
   const [message, setMessage] = useState("");
 
   function handleSubmit(formData) {
-    if (message.length > 115) {
+    if (message.length > 100) {
       return;
     }
 

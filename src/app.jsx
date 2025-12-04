@@ -161,9 +161,9 @@ export default function app() {
             </p>
             <Button
               type="submit"
-              disabled={(message ?? "").length > 115}
+              disabled={(message ?? "").length > 100}
               className={`rounded bg-blue-600 px-4 py-2 text-white ${
-                (message ?? "").length > 115
+                (message ?? "").length > 100
                   ? "opacity-50 cursor-not-allowed"
                   : "hover:bg-blue-700"
               }`}
