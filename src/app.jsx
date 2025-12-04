@@ -164,6 +164,25 @@ export default function app() {
               Clear
             </button>
           </form>
+
+          {submittedData && (
+            <section className="mt-6 rounded-lg bg-green-50 p-4">
+              <h2 className="mb-2 font-semibold text-green-900">
+                Form Submitted!
+              </h2>
+              <ul className="space-y-1 text-sm">
+                <li>
+                  <strong>Name:</strong> {submittedData.name}
+                </li>
+                <li>
+                  <strong>Email:</strong> {submittedData.email}
+                </li>
+                <li>
+                  <strong>Message:</strong> {submittedData.message}
+                </li>
+              </ul>
+            </section>
+          )}
         </div>
       </main>
     </>
