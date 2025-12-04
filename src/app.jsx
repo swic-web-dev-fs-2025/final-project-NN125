@@ -120,24 +120,25 @@ export default function app() {
           <p className="text-sm pb-4">
             The buttons' colors will stay upon refresh.
           </p>
+          {/* Button Field */}
           <div className="grid grid-cols-8 gap-1.25 pb-2">
-            {/* Button Field */}
             {/* Map the buttons array to Button components */}
             {BUTTON_FIELD.map((buttonField) => (
               <Button key={buttonField.id} {...buttonField} />
             ))}
           </div>
+          {/* Color picker */}
           <div>
-            {/* Color picker */}
             {/* Map the buttons array to Button components */}
             {BUTTON_COLOR_PICKER.map((colorField) => (
               <Button key={colorField.id} {...colorField} />
             ))}
           </div>
+          {/* Selected color display */}
           <div>
-            {/* Selected color display */}
             <p className="font-bold">Selected Color: {colorDisplay}</p>
           </div>
+          {/* Form Section */}
           <form action={handleSubmit} className="space-y-4">
             {/* Map the fields array to Input components */}
             {FORM_FIELDS.map((field) => (
