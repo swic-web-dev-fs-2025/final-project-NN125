@@ -105,7 +105,7 @@ export default function app() {
               <Button key={field.id} {...field} />
             ))}
           </div>
-          <div className="grid grid-cols-10 gap-1.25">
+          <div>
             {/* Color picker */}
             {/* Map the buttons array to Button components */}
             {BUTTON_COLOR_PICKER.map((field) => (
