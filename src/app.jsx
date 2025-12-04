@@ -99,10 +99,10 @@ export default function app() {
   ];
 
   const FORM_FIELDS = [
-    { label: "Title", name: "title", type: "text" },
-    { label: "Name", name: "name", type: "text" },
+    { label: "What is your artwork's Title?", name: "title", type: "text" },
+    { label: "What is your Name?", name: "name", type: "text" },
     {
-      label: "Description",
+      label: "Describe your Piece:",
       name: "message",
       type: "textarea",
       value: message ?? "",
