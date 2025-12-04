@@ -1,3 +1,7 @@
+import useButtonState from "./hooks/use-button-state";
+
+const { buttonStates, handleButtonClick, setCurrentColor } = useButtonState();
+
 export const BUTTON_ROW_ONE = [
   {
     name: "0",
