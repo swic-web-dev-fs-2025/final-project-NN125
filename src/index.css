@@ -6,4 +6,9 @@
 
 .colorPicker {
   @apply p-4 m-1 rounded-full border-2 border-gray-400 cursor-pointer hover:scale-110 transition focus:border-black focus:scale-115;
+
+  /* when this element also has .bg-black, use white focus border */
+  &.bg-black:focus {
+    @apply border-white;
+  }
 }
