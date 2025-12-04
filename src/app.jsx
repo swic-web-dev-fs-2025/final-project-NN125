@@ -1,8 +1,10 @@
 import Button from "./components/Button.jsx";
 import useButtonState from "./hooks/use-button-state";
-import { BUTTON_COLOR_PICKER, BUTTON_ROW_ONE } from "./utils/ButtonRows";
 
 export default function app() {
+  const { colorDisplay, buttonStates, handleButtonClick, setCurrentColor } =
+    useButtonState();
+
   const BUTTON_ROW_ONE = [
     {
       name: "0",
