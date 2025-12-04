@@ -101,15 +101,15 @@ export default function app() {
           <div className="grid grid-cols-8 gap-1.25 pb-2">
             {/* Button Field */}
             {/* Map the buttons array to Button components */}
-            {BUTTON_FIELD.map((field) => (
-              <Button key={field.id} {...field} />
+            {BUTTON_FIELD.map((buttonField) => (
+              <Button key={buttonField.id} {...buttonField} />
             ))}
           </div>
           <div>
             {/* Color picker */}
             {/* Map the buttons array to Button components */}
-            {BUTTON_COLOR_PICKER.map((field) => (
-              <Button key={field.id} {...field} />
+            {BUTTON_COLOR_PICKER.map((colorField) => (
+              <Button key={colorField.id} {...colorField} />
             ))}
           </div>
           <div>
