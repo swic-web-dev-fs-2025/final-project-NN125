@@ -144,7 +144,7 @@ export default function app() {
               <Input key={field.name} {...field} />
             ))}
             <p className="text-sm text-gray-600">
-              Characters: {(message ?? "").length}/500
+              Characters: {(message ?? "").length}/200
             </p>
             <Button
               type="submit"
