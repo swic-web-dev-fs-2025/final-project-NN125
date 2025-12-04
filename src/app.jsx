@@ -109,6 +109,13 @@ export default function app() {
             <Button key={field.name} {...field} />
           ))}
         </div>
+        <div>
+          {/* Color picker */}
+          {/* Map the buttons array to Button components */}
+          {BUTTON_COLOR_PICKER.map((field) => (
+            <Button key={field.color} {...field} />
+          ))}
+        </div>
       </main>
     </>
   );
