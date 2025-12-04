@@ -29,8 +29,8 @@ export default function useButtonState() {
     .toUpperCase();
 
   // form
-  const [submittedData, setSubmittedData] = useState(null);
-  const [message, setMessage] = useState(null);
+  const [submittedData, setSubmittedData] = useState("");
+  const [message, setMessage] = useState("");
 
   function handleSubmit(formData) {
     if (message.length > 200) {
