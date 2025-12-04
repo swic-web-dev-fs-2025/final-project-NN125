@@ -2,7 +2,7 @@ import Button from "./components/Button.jsx";
 import useButtonState from "./hooks/use-button-state";
 
 export default function app() {
-  const { buttonStates, handleButtonClick, setCurrentColor, colorState } =
+  const { buttonStates, handleButtonClick, setCurrentColor, colorDisplay } =
     useButtonState();
 
   const BUTTON_ROW_ONE = [
@@ -142,7 +142,7 @@ export default function app() {
           </div>
           <div>
             {/* Selected color display */}
-            <p>Selected Color: {colorState}</p>
+            <p className="font-bold">Selected Color: {colorDisplay}</p>
           </div>
         </div>
       </main>
