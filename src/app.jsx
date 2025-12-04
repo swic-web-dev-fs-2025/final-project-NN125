@@ -9,6 +9,7 @@ export default function app() {
     setCurrentColor,
     handleSubmit,
     submittedData,
+    setSubmittedData,
     message,
     setMessage,
   } = useButtonState();
