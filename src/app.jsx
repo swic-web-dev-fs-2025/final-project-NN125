@@ -157,7 +157,11 @@ export default function app() {
             {FORM_FIELDS.map((field) => (
               <Input key={field.name} {...field} />
             ))}
-            <p className="text-sm text-gray-600">
+            <p
+              className={`text-sm ${
+                message.length > 100 ? "text-red-500" : "text-gray-600"
+              } transition-colors duration-75`}
+            >
               Characters: {(message ?? "").length}/100
             </p>
             <Button
