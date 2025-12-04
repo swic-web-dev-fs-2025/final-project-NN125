@@ -2,8 +2,16 @@ import Button from "./components/Button.jsx";
 import useButtonState from "./hooks/use-button-state.jsx";
 
 export default function app() {
-  const { colorDisplay, buttonStates, handleButtonClick, setCurrentColor } =
-    useButtonState();
+  const {
+    colorDisplay,
+    buttonStates,
+    handleButtonClick,
+    setCurrentColor,
+    handleSubmit,
+    submittedData,
+    message,
+    setMessage,
+  } = useButtonState();
 
   // dynamically create an array of 64 buttons using Array.from
   const BUTTON_FIELD = Array.from({ length: 64 }, (unused, index) => ({
