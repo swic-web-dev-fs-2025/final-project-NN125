@@ -29,7 +29,7 @@ export default function useButtonState() {
     .toUpperCase();
 
   // form
-  const [submittedData, setSubmittedData] = useLocalStorage("formData", {});
+  const [submittedData, setSubmittedData] = useState("");
   const [message, setMessage] = useState("");
 
   function handleSubmit(formData) {
