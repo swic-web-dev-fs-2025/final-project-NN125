@@ -147,7 +147,7 @@ export default function app() {
             ))}
           </div>
           {/* Selected color display */}
-          <div>
+          <div className="p-2">
             <p className="font-bold">Selected Color: {colorDisplay}</p>
           </div>
           {/* Form Section */}
