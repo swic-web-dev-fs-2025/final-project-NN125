@@ -57,6 +57,7 @@ export default function useButtonState() {
   }
 
   return {
+    BUTTON_COUNT,
     buttonStates,
     handleButtonClick,
     handleFillButtonClick,
