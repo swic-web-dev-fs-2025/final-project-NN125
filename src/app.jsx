@@ -4,6 +4,7 @@ import useButtonState from "./hooks/use-button-state.jsx";
 
 export default function app() {
   const {
+    BUTTON_COUNT,
     colorDisplay,
     buttonStates,
     handleButtonClick,
@@ -17,12 +18,15 @@ export default function app() {
     savedData,
   } = useButtonState();
 
-  // dynamically create an array of 64 buttons using Array.from
-  const BUTTON_FIELD = Array.from({ length: 64 }, (unused, index) => ({
-    id: String(index),
-    onClick: () => handleButtonClick(index),
-    color: buttonStates[index],
-  }));
+  // dynamically create an array of buttons using Array.from
+  const BUTTON_FIELD = Array.from(
+    { length: BUTTON_COUNT },
+    (unused, index) => ({
+      id: String(index),
+      onClick: () => handleButtonClick(index),
+      color: buttonStates[index],
+    })
+  );
 
   const BUTTON_COLOR_PICKER = [
     {
