@@ -7,7 +7,7 @@ export default function app() {
     BUTTON_COUNT,
     colorDisplay,
     buttonStates,
-    handleButtonClick,
+    handleFieldButtonClick,
     handleFillButtonClick,
     setCurrentColor,
     handleSubmit,
@@ -23,7 +23,7 @@ export default function app() {
     { length: BUTTON_COUNT },
     (unused, index) => ({
       id: String(index),
-      onClick: () => handleButtonClick(index),
+      onClick: () => handleFieldButtonClick(index),
       color: buttonStates[index],
     })
   );
