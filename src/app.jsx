@@ -12,7 +12,7 @@ export default function app() {
     setCurrentColor,
     handleSubmit,
     submittedData,
-    setSubmittedData,
+    handleFormReset,
     message,
     setMessage,
     savedData,
@@ -192,8 +192,7 @@ export default function app() {
             <Button
               type="button"
               onClick={(event) => {
-                event.target.form.reset();
-                setSubmittedData(null);
+                handleFormReset(event);
               }}
               className="ml-2 rounded bg-gray-400 px-4 py-2 text-white hover:bg-gray-500 transition-colors cursor-pointer"
               text="Clear"

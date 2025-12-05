@@ -56,6 +56,11 @@ export default function useButtonState() {
     setSavedData(data);
   }
 
+  function handleFormReset(event) {
+    event.target.form.reset();
+    setSubmittedData("");
+  }
+
   return {
     BUTTON_COUNT,
     buttonStates,
@@ -65,7 +70,7 @@ export default function useButtonState() {
     colorDisplay,
     handleSubmit,
     submittedData,
-    setSubmittedData,
+    handleFormReset,
     message,
     setMessage,
     savedData,
