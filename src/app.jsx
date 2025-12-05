@@ -153,7 +153,7 @@ export default function app() {
             <p className="font-bold">Selected Color: {colorDisplay}</p>
           </div>
           {/* Fill Button */}
-          <div className="p-2">
+          <div className="pb-2">
             <Button
               onClick={() => {
                 handleFillButtonClick();
