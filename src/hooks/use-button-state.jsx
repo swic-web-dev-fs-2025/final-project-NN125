@@ -59,6 +59,7 @@ export default function useButtonState() {
   function handleFormReset(event) {
     event.target.form.reset();
     setSubmittedData("");
+    setMessage("");
   }
 
   return {
