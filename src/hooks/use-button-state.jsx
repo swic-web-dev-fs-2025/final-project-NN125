@@ -18,6 +18,10 @@ export default function useButtonState() {
     }));
   };
 
+  const handleFillButtonClick = () => {
+    setButtonStates(Array(64).fill(colorState));
+  };
+
   // change the color state based on color picker selection
   const setCurrentColor = (color) => {
     setColorState(color);
@@ -48,6 +52,7 @@ export default function useButtonState() {
   return {
     buttonStates,
     handleButtonClick,
+    handleFillButtonClick,
     setCurrentColor,
     colorDisplay,
     handleSubmit,
