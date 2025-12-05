@@ -3,9 +3,12 @@ import { useState } from "react";
 
 export default function useButtonState() {
   // main app
+
+  const BUTTON_COUNT = 64;
+
   const [buttonStates, setButtonStates] = useLocalStorage(
     "buttonStates",
-    Array(64).fill("bg-white")
+    Array(BUTTON_COUNT).fill("bg-white")
   );
 
   const [colorState, setColorState] = useState("bg-black");
@@ -19,7 +22,7 @@ export default function useButtonState() {
   };
 
   const handleFillButtonClick = () => {
-    setButtonStates(Array(64).fill(colorState));
+    setButtonStates(Array(BUTTON_COUNT).fill(colorState));
   };
 
   // change the color state based on color picker selection
