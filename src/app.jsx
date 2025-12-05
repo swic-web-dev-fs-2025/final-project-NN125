@@ -7,6 +7,7 @@ export default function app() {
     colorDisplay,
     buttonStates,
     handleButtonClick,
+    handleFillButtonClick,
     setCurrentColor,
     handleSubmit,
     submittedData,
@@ -150,6 +151,16 @@ export default function app() {
           {/* Selected color display */}
           <div className="p-2">
             <p className="font-bold">Selected Color: {colorDisplay}</p>
+          </div>
+          {/* Fill Button */}
+          <div className="p-2">
+            <Button
+              onClick={() => {
+                handleFillButtonClick();
+              }}
+              className={`rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 cursor-pointer`}
+              text="Fill with Selected Color"
+            />
           </div>
           {/* Form Section */}
           <form action={handleSubmit} className="space-y-4">
