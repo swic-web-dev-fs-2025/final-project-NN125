@@ -15,7 +15,7 @@ export default function useButtonState() {
   const [colorState, setColorState] = useState("bg-black");
 
   // set the button's class to the current colorState when clicked
-  const handleButtonClick = (buttonIndex) => {
+  const handleFieldButtonClick = (buttonIndex) => {
     setButtonStates((prevState) => ({
       ...prevState,
       [buttonIndex]: colorState,
@@ -59,7 +59,7 @@ export default function useButtonState() {
   return {
     BUTTON_COUNT,
     buttonStates,
-    handleButtonClick,
+    handleFieldButtonClick,
     handleFillButtonClick,
     setCurrentColor,
     colorDisplay,
