@@ -8,7 +8,7 @@ export default function Input({
   onChange,
 }) {
   const isTextarea = type === "textarea";
-  const baseClasses = "w-full rounded border px-3 py-2";
+  const baseClasses = "w-full rounded border px-3 py-2 bg-white";
 
   return (
     <div className="mb-4">
