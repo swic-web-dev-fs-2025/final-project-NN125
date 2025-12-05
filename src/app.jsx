@@ -113,7 +113,7 @@ export default function app() {
   return (
     <>
       <main className="min-h-screen bg-blue-900 flex flex-col items-center justify-center">
-        <div className="rounded-xl m-4 text-center bg-white p-8 shadow-lg">
+        <div className="rounded-xl m-4 text-center bg-gray-100 p-8 shadow-lg">
           <h1 className="text-4xl font-bold p-4">Button Color Changer</h1>
           <h2 className="text-xl pb-4">
             Click the buttons to change their color!
