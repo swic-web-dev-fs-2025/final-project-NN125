@@ -142,7 +142,7 @@ export default function app() {
           </div>
           {/* Color picker */}
           <div>
-            {/* Map the buttons array to Button components */}
+            {/* Map the color picker array to Button components */}
             {BUTTON_COLOR_PICKER.map((colorField) => (
               <Button key={colorField.id} {...colorField} />
             ))}
